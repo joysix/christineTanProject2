@@ -4,189 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+    header {
+        background-image: url('./assets/image-1.jpeg'); 
+    }
+    </style>
     <title>Restaurant</title>
 </head>
 <body>
-    <div class="container">
+
+    <div class="wrapper">
         <header>
-            <h1>Restaurant</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav>
+                    <h1>Restaurant</h1>
+                    <ul class="navbar">
+                        <li><a class="navbar__link" href="#">Home</a></li>
+                        <li><a class="navbar__link" href="#">Menu</a></li>
+                        <li><a class="navbar__link" href="#">Blog</a></li>
+                        <li><a class="navbar__link" href="#">Contact</a></li>
+                        <li><a class="navbar__link" href="#">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="greet">
+                    <h2>Welcome</h2>
+                    <h4>to my restaurant website</h4>
+                    <a class="btn btn--red" href="#">Start</a>
+                </div>
+            </div>
         </header>
+        
         <main>
-            <h2>Welcome</h2>
-            <p>to my restaurant website</p>
-            <a href="#">Start</a>
+            <section class="container about">
+                <h3>We are...</h3>
+                <div class="about__adjectives">
+                    <figure class="adjectives__img">
+                        <img src="./assets/image-2.jpeg" alt="">
+                        <figcaption class="adjectives__cap">Local</figcaption>
+                    </figure>
+                    <figure class="adjectives__img">
+                        <img src="./assets/image-3.jpeg" alt="">
+                        <figcaption class="adjectives__cap">Modern</figcaption>
+                    </figure>
+                    <figure class="adjectives__img">
+                        <img src="./assets/image-4.jpeg" alt="">
+                        <figcaption class="adjectives__cap">Friendly</figcaption>
+                    </figure>
+                    <figure class="adjectives__img">
+                        <img src="./assets/image-5.jpeg" alt="">
+                        <figcaption class="adjectives__cap">Delicious</figcaption>
+                    </figure>
+                </div>
+                <div class="about__bio">
+                    <h4>About us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud.</p>
+                    <a class="btn btn--red" href="">More</a>
+                </div>
+            </section>
+    
+            <section>
+                <h3>Welcome to Restaurant</h3>
+                <p>Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel
+                tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu
+                est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
+                <a class="btn btn--grey" href="">View</a>
+            </section>
+    
+            <section>
+                <h3>Services</h3>
+                <div>
+                    <h4>Custom catering</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <figure>
+                    <img src="./assets/image-6.jpeg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div>
+                    <h4>Event bookings</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <figure>
+                    <img src="./assets/image-7.jpeg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+    
+            <section>
+                <h3>Reviews</h3>
+                <figure>
+                    <img src="./assets/image-8.jpeg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat voluptatem.</p>
+                <p>J. Michels</p>
+            </section>
+    
+            <section>
+                <h3>Events</h3>
+                <a href="">
+                    <figure>
+                        <img src="./assets/image-9.jpeg" alt="">
+                            <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <h3>Sample Event</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                </a>
+                <a href="">
+                    <figure>
+                        <img src="./assets/image-10.jpeg" alt="">
+                            <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <h3>Sample Event</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                </a>
+                <a href="">
+                    <figure>
+                        <img src="./assets/image-11.jpeg" alt="">
+                            <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <h3>Sample Event</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                </a>
+            </section>
+    
+            <section>
+                <h3>Ask a question</h3>
+                <form action=""><input type="text"><button class="btn btn--red"></button></form>
+            </section>
+    
+            <section>
+                <div>
+                    <div>
+                        <i class="fas fa-check-square"></i>
+                        <p><span>16</span> years open</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-smile"></i>
+                        <p><span>180</span> happy customers</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-calendar"></i>
+                        <p><span>12</span> World Class Cooks</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-trophy"></i>
+                        <p><span>55</span> Awards</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <h3>Our blog</h3>
+                <a href="">
+                    <div>
+                        <figure>
+                            <img src="./assets/image-12.jpeg" alt="">
+                            <p>Popular Steak Cuts</p>
+                        </figure>
+                        <p></p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <figure>
+                            <img src="./assets/image-13.jpeg" alt="">
+                            <p>Reservations are Booming!</p>
+                        </figure>
+                        <p></p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <figure>
+                            <img src="./assets/image-14.jpeg" alt="">
+                            <p>Wine Tasting Even</p>
+                        </figure>
+                        <p></p>
+                    </div>
+                </a>
+            </section>
         </main>
-        <section>
-            <h3>We are...</h3>
-            <div>
-                <figure>
-                    <img src="./assets/image-2.jpeg" alt="">
-                    <figcaption>Local</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/image-3.jpeg" alt="">
-                    <figcaption>Modern</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/image-4.jpeg" alt="">
-                    <figcaption>Friendly</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/image-5.jpeg" alt="">
-                    <figcaption>Delicious</figcaption>
-                </figure>
-            </div>
-            <div>
-                <h4>About us</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud.</p>
-                <a href="">More</a>
-            </div>
-        </section>
-        <section>
-            <h3>Welcome to Restaurant</h3>
-            <p>Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel
-            tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu
-            est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
-            <a href="">View</a>
-        </section>
-        <section>
-            <h3>Services</h3>
-            <div>
-                <h4>Custom catering</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <figure>
-                <img src="./assets/image-6.jpeg" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <div>
-                <h4>Event bookings</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <figure>
-                <img src="./assets/image-7.jpeg" alt="">
-                <figcaption></figcaption>
-            </figure>
-        </section>
-        <section>
-            <h3>Reviews</h3>
-            <figure>
-                <img src="./assets/image-8.jpeg" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-            quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-            aliquam quaerat voluptatem.</p>
-            <p>J. Michels</p>
-        </section>
-        <section>
-            <h3>Events</h3>
-            <a href="">
-                <figure>
-                    <img src="./assets/image-9.jpeg" alt="">
-                        <figcaption></figcaption>
-                </figure>
-                <div>
-                    <h3>Sample Event</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </a>
-            <a href="">
-                <figure>
-                    <img src="./assets/image-10.jpeg" alt="">
-                        <figcaption></figcaption>
-                </figure>
-                <div>
-                    <h3>Sample Event</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </a>
-            <a href="">
-                <figure>
-                    <img src="./assets/image-11.jpeg" alt="">
-                        <figcaption></figcaption>
-                </figure>
-                <div>
-                    <h3>Sample Event</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </a>
-        </section>
-        <section>
-            <h3>Ask a question</h3>
-            <form action=""><input type="text"><button></button></form>
-        </section>
-        <section>
-            <div>
-                <div>
-                    <i class="fas fa-check-square"></i>
-                    <p><span>16</span> years open</p>
-                </div>
-                <div>
-                    <i class="fas fa-smile"></i>
-                    <p><span>180</span> happy customers</p>
-                </div>
-                <div>
-                    <i class="fas fa-calendar"></i>
-                    <p><span>12</span> World Class Cooks</p>
-                </div>
-                <div>
-                    <i class="fas fa-trophy"></i>
-                    <p><span>55</span> Awards</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3>Our blog</h3>
-            <a href="">
-                <div>
-                    <figure>
-                        <img src="./assets/image-12.jpeg" alt="">
-                        <p>Popular Steak Cuts</p>
-                    </figure>
-                    <p></p>
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    <figure>
-                        <img src="./assets/image-13.jpeg" alt="">
-                        <p>Reservations are Booming!</p>
-                    </figure>
-                    <p></p>
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    <figure>
-                        <img src="./assets/image-14.jpeg" alt="">
-                        <p>Wine Tasting Even</p>
-                    </figure>
-                    <p></p>
-                </div>
-            </a>
-        </section>
+
         <footer>
             <div>
                 <div>
@@ -198,11 +217,13 @@
                         </ul>
                         <form action=""><input type="text" placeholder="your email"><button><i class="fas fa-paper-plane"></i></button></form>
                 </div>
+
                 <div>
                     <h4>About us</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
+                
                 <div>
                     <h4>Instagram</h4>
                     <div>
@@ -241,23 +262,24 @@
                     </div>
                 </div>
             </div>
+            
             <div>
                 <h3>Restaurant</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
-                </nav>
+                <ul class="navbar">
+                    <li><a class="navbar__link" href="#">Home</a></li>
+                    <li><a class="navbar__link" href="#">Menu</a></li>
+                    <li><a class="navbar__link" href="#">Blog</a></li>
+                    <li><a class="navbar__link" href="#">Contact</a></li>
+                    <li><a class="navbar__link" href="#">About Us</a></li>
+                </ul>
             </div>
-            <div class="ul">
+
+            <ul>
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            </div>
+            </ul>
+
             <div>
                 <h6>2018 All rights reserved ©</h6>
             </div>

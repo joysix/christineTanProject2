@@ -1,6 +1,28 @@
 $yellow: #e5bf4b;
 $red: #da331d;
 $grey: #2a2a2a;
+$white: #fff;
 
 $serif: "Lora", serif;
 $sanserif: "Raleway", sans-serif;
+
+$headerbg: "./assets/image-1.jpeg";
+
+@mixin fontSize($fontSize){
+    font-size: $fontSize * 1px;
+    font-size: ($fontSize/10) * 1rem;
+}
+
+@mixin heading($fontSize) {
+    font-size: $fontSize;
+    font-family: $sanserif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}

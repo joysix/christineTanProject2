@@ -1,0 +1,36 @@
+header {
+    height: 98vh;
+    color: #fff;
+    background-color: $yellow;
+    background-image: url("../assets/image-1.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+    & > .container {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+        flex: 1 0 50%;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__link {
+        font-family: $sanserif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+.greet {
+    width: 100%;
+    margin: auto;
+}

@@ -1,0 +1,113 @@
+//////////// ABOUT US
+
+.about {
+    & > .container {
+        padding: 80px 0;
+        display: flex;
+        flex-flow: row wrap;
+        h3 {
+            flex: 1 0 100%;
+            text-align: center;
+        }
+        div {
+            flex: 1 0 50%;
+        }
+    }
+    &__adjectives {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 0 50%;
+        justify-content: space-around;
+    }
+    &__bio {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        & > div > * {
+            margin: 10px auto;
+        }
+    }
+}
+
+.adjectives {
+    &__img {
+        padding: 20px;
+    }
+    &__cap {
+        font-family: $sanserif;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+
+//////////// WELCOME
+
+.welcome {
+    text-align: center;
+}
+
+
+//////////// SERVICES
+
+.services {
+    & > .container {
+        @include flex(row);
+        h3 {
+            width: 100%;
+        }
+        &__service {
+            flex: 1 0 50%;
+            text-align: center;
+            & > * {
+                align-items: center;
+            }
+            &--right {
+                order: 99;
+            }
+        }
+        & > figure > img {
+            width: 100%;
+        }
+    }
+}
+
+
+//////////// REVIEWS
+
+.reviews {
+    padding: 0 100px;
+    text-align: center;
+    & > p:last-child::before,
+    & > p:last-child::after {
+        content: " ~ "
+    }
+}
+
+
+//////////// EVENTS
+
+
+//////////// QUESTION
+
+//////////// STATS
+
+//////////// BLOG
+
+.blog {
+    &__post {
+        display: block;
+        flex: 1 0 33%;
+    }
+    &__img {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    &__more::before {
+        content: "read more >>";
+        text-transform: uppercase;
+    }
+}

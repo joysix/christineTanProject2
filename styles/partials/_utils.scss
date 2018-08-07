@@ -26,3 +26,7 @@ $headerbg: "./assets/image-1.jpeg";
     flex-direction: $direction;
     flex-wrap: wrap;
 }
+
+@mixin evenmargin($topbottom: 10px, $rightleft: auto) {
+    margin: $topbottom $rightleft;
+}

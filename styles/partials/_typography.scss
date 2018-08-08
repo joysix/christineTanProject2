@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    @include heading(4.3rem);
+    @include heading(4.4rem);
 }
 
 h3 {
@@ -20,7 +20,7 @@ h3 {
 }
 
 h4 {
-    @include heading(1.8rem);
+    @include heading(2.0rem);
 }
 
 h5 {
@@ -29,6 +29,10 @@ h5 {
 
 h6 {
     @include heading(1.2rem);
+}
+
+em {
+    font-style: italic;
 }
 
 a {

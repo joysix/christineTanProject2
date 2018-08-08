@@ -2,35 +2,40 @@ header {
     height: 98vh;
     color: #fff;
     background-color: $yellow;
-    background-image: url("../assets/image-1.jpeg");
-    background-size: 100%;
-    background-attachment: fixed;
+    background: url($headerbg) right;
+    background-size: cover;
+    // background-attachment: fixed;
+
     & > .container {
-        display: flex;
-        flex-flow: column;
+        @include flex(column);
         height: 100%;
     }
 }
 
 nav {
-    display: flex;
+    @include flex(row);
     justify-content: space-between;
+    margin-top: 50px;
     & > * {
         flex: 1 0 50%;
     }
 }
 
 .navbar {
-    display: flex;
+    @include flex(row);
     align-items: center;
     justify-content: space-between;
+
     &__link {
-        font-family: $sanserif;
-        font-weight: 600;
-        text-transform: uppercase;
+        @include heading(1.4rem);
     }
 }
+
 .hero {
     width: 100%;
     margin: auto;
+
+    * {
+        margin: 10px 0;
+    }
 }

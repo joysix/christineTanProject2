@@ -1,113 +1,290 @@
-//////////// ABOUT US
+//////////// ABOUT US ////
 
 .about {
+
+    // * { border: 0.25px dotted red; }
+
+    padding: 80px 0;
+
     & > .container {
-        padding: 80px 0;
-        display: flex;
-        flex-flow: row wrap;
+        @include flex(row);
         h3 {
-            flex: 1 0 100%;
+            flex-basis: 100%;
+            padding-bottom: 50px;
             text-align: center;
         }
-        div {
+        .about__adjectives, .about__bio {
             flex: 1 0 50%;
         }
     }
     &__adjectives {
-        display: flex;
-        flex-flow: row wrap;
-        flex: 1 0 50%;
+        @include flex(row);
+        flex: 0 0 100%;
         justify-content: space-around;
     }
     &__bio {
         margin: auto;
         width: 100%;
+        @include sizing(1.8rem, 3.0rem);
         text-align: center;
-        & > div > * {
-            margin: 10px auto;
+        & > .center > * {
+            margin: 20px auto;
         }
     }
 }
 
 .adjectives {
     &__img {
-        padding: 20px;
+        flex: 0 0 50%;
+        padding: 25px 0;
+    img {
+        width: 95px;
+        margin: auto;
     }
+    figcaption {
+        margin-top: 20px;
+    }
+}
     &__cap {
-        font-family: $sanserif;
-        font-weight: 600;
-        text-transform: uppercase;
+        @include heading(1.8rem);
         text-align: center;
     }
 }
 
 
-//////////// WELCOME
+//////////// WELCOME ////
 
 .welcome {
-    text-align: center;
+    @include flex(column);    
+    h3 {
+        flex-basis: 100%;
+    }
+    & > .container {
+        margin: 100px auto;
+        padding: 0 60px;
+        @include sizing(1.8rem, 3.0rem);
+        text-align: center;
+        * {
+        margin: 30px 0;
+        }
+        .btn {
+            margin: auto;
+        }
+    }
 }
 
 
-//////////// SERVICES
+//////////// SERVICES ////
 
 .services {
+    padding: 80px 0;
+    & > .container {
+        @include flex(row); 
+        h3 {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+    }
+    &__service {
+        flex: 1 0 50%;
+        margin: auto;
+        height: 100%;
+        @include sizing(1.4rem, 1.8rem);
+        text-align: center;
+        .center {
+            padding: 0px 50px;
+            h4 {
+                margin-bottom: 20px;
+            }
+        }
+        &--right {
+            order: 99;
+        }
+    }
+}
+
+
+//////////// REVIEWS ////
+
+.reviews {
+    & > .container {
+        padding: 80px 0;
+        display: flex;
+        text-align: center;
+        @include sizing(1.4rem, 2.2rem);
+
+        h3 {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+        }
+        figure {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 95px;
+        }
+        
+        figure i {
+            margin: 30px;
+            font-size: 3.0rem;
+        }
+        
+        figure,
+        p {
+            margin: 15px auto;
+            padding: 0 180px;
+        }
+
+        p:last-child::before,
+        p:last-child::after {
+            content: " ~ ";
+        }
+    }
+}
+
+
+//////////// EVENTS ////
+
+.events {
+    padding: 80px 0;
+    h3 {
+        margin-bottom: 80px;
+    }
+    ul {
+        @include flex(row);
+        background-color: dodgerblue;
+    }
+    li {
+        flex: 1 0 33%;
+        display: flex;
+    }
+    a {
+        display: flex;
+        position: relative;
+        align-items: stretch;
+        .events__img {
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .events__txt {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            .center {
+                margin: auto;
+                text-align: center;
+                @include sizing(1.4rem, 2.2rem);
+                h3 {
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    padding: 20px 30px;
+                    width: fit-content;
+                    border-bottom: 2px solid $white;
+                }
+            }
+        }
+        &:hover .events__txt {
+            display: block;
+            color: $white;
+            background-color: #2a2a2ae6;
+        }
+    }
+}
+
+
+//////////// QUESTION ////
+
+.question {
+    margin-bottom: 80px;
+    & > .container {
+        @include flex(row);
+        h3 { 
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    .question {
+        &__form {
+            @include flex(column);
+        }
+        &__input {
+            margin-bottom: 40px;
+            padding: 10px;
+            width: 500px;
+            font-size: 1.6rem;
+            border-bottom: 1px $grey solid;
+            text-align: center; 
+        }
+    }
+}
+
+//////////// STATS ////
+
+.stats {
+    padding: 80px 0;
+    & > .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item {
+        flex: 1 0 25%;
+        text-align: center;
+        text-transform: capitalize;
+        * {
+            margin: 5px 0;
+        }
+        i, .stats__record {
+            display: block;
+            color: $grey;
+        }
+        i {
+            font-size: 4.0rem;
+            margin-bottom: 15px;
+        }
+        .stats__record {
+            @include heading(2.0rem)
+        }
+    }
+}
+
+//////////// BLOG ////
+
+.blog {
+    padding: 80px 0;
     & > .container {
         @include flex(row);
         h3 {
-            width: 100%;
-        }
-        &__service {
-            flex: 1 0 50%;
-            text-align: center;
-            & > * {
-                align-items: center;
-            }
-            &--right {
-                order: 99;
-            }
-        }
-        & > figure > img {
-            width: 100%;
+            flex-basis: 100%;
+            margin-bottom: 40px;
         }
     }
-}
-
-
-//////////// REVIEWS
-
-.reviews {
-    padding: 0 100px;
-    text-align: center;
-    & > p:last-child::before,
-    & > p:last-child::after {
-        content: " ~ "
-    }
-}
-
-
-//////////// EVENTS
-
-
-//////////// QUESTION
-
-//////////// STATS
-
-//////////// BLOG
-
-.blog {
     &__post {
         display: block;
-        flex: 1 0 33%;
+        margin: 0px 10px;
+        flex: 1 0 calc(100% / 3 - 20px);
+    }
+    &__wrapper {
+        @include heading(1.6rem, 0px);
+        text-transform: capitalize;
     }
     &__img {
         width: 100%;
     }
-    img {
-        width: 100%;
+    &__img *, .blog__more {
+        margin-bottom: 10px;
     }
     &__more::before {
-        content: "read more >>";
+        content: "read more »";
+        color: $red;
+        @include heading(1.2rem, 0px);
         text-transform: uppercase;
     }
 }

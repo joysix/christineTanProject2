@@ -1,5 +1,17 @@
+.welcome,
+.stats {
+    background-color: $yellow;
+}
+
+.reviews,
+footer {
+    color: $white;
+    background-color: $grey;
+}
+
 .btn {
     display: inline-block;
+    margin: auto;
     padding: 10px 30px;
     border-radius: 20px;
     color: $white;
@@ -12,4 +24,12 @@
     &--grey {
         background-color: $grey;
     }
+    &--inline {
+        display: inline;
+    }
+}
+
+form, input, button {
+    display: block;
+    border: none;
 }

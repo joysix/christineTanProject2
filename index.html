@@ -20,19 +20,21 @@
 
         <!-- HEADER -->
 
-        <header>
+        <header id="home">
             <div class="container">
 
                 <!-- header, navbar -->
                 
                 <nav>
                     <h1>Restaurant</h1>
+                    <label for="toggle"><i class="fa fa-bars"></i></label>
+                    <input type="checkbox" id="toggle" name="toggle">
                     <ul class="navbar">
-                        <li><a class="navbar__link" href="#">Home</a></li>
+                        <li><a class="navbar__link" href="#home">Home</a></li>
                         <li><a class="navbar__link" href="#">Menu</a></li>
-                        <li><a class="navbar__link" href="#">Blog</a></li>
+                        <li><a class="navbar__link" href="#blog">Blog</a></li>
                         <li><a class="navbar__link" href="#">Contact</a></li>
-                        <li><a class="navbar__link" href="#">About Us</a></li>
+                        <li><a class="navbar__link" href="#about">About Us</a></li>
                     </ul>
                 </nav>
 
@@ -52,7 +54,7 @@
 
             <!-- about us -->
             
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <h3>We are...</h3>
                     <div class="about__adjectives">
@@ -78,7 +80,7 @@
                             <h4>About us</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud.</p>
-                            <a class="btn btn--red btn--inline" href="">More</a>
+                            <a class="btn about__btn btn--red btn--inline" href="">More</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +110,7 @@
                             Ut enim ad minim veniam, quis nostrud.</p>
                         </div>
                     </div>
-                    <figure class="services__service">
+                    <figure class="services__service services__service--top">
                         <img src="./assets/image-6.jpeg" alt="">
                         <figcaption></figcaption>
                     </figure>
@@ -119,7 +121,7 @@
                             Ut enim ad minim veniam, quis nostrud.</p>
                         </div>
                     </div>
-                    <figure class="services__service ">
+                    <figure class="services__service services__service--hide">
                         <img src="./assets/image-7.jpeg" alt="">
                         <figcaption></figcaption>
                     </figure>
@@ -135,7 +137,7 @@
                         <i class="fas fa-angle-left"></i><img src="./assets/image-8.jpeg" alt="Jay Michels">
                         <i class="fas fa-angle-right"></i>
                     </figure>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <!-- veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. --></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                     <p><em>J. Michels</em></p>
                 </div>
             </section>
@@ -146,7 +148,7 @@
                     <h3>Events</h3>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a class="block" href="#">
                                 <figure class="events__img">
                                     <img src="./assets/image-9.jpeg" alt="">
                                 </figure>
@@ -159,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="block" href="#">
                                 <figure class="events__img">
                                     <img src="./assets/image-10.jpeg" alt="">
                                 </figure>
@@ -172,7 +174,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="block" href="#">
                                 <figure class="events__img">
                                     <img src="./assets/image-11.jpeg" alt="">
                                 </figure>
@@ -185,6 +187,7 @@
                             </a>
                         </li>
                     </ul>
+                    <a class="btn events__btn btn--grey" href="">CALENDAR</a>
             </section>
 
             <!-- question form -->
@@ -221,10 +224,10 @@
     
             <!-- blog -->
 
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <h3>Our blog</h3>
-                    <a class="blog__post" href="#">
+                    <a class="blog__post block" href="#">
                         <div class="blog__wrapper">
                             <figure class="blog__img">
                                 <img src="./assets/image-12.jpeg" alt="">
@@ -233,7 +236,7 @@
                             <p class="blog__more"></p>
                         </div>
                     </a>
-                    <a class="blog__post" href="#">
+                    <a class="blog__post block" href="#">
                         <div class="blog__wrapper">
                             <figure class="blog__img">
                                 <img src="./assets/image-13.jpeg" alt="">
@@ -242,7 +245,7 @@
                             <p class="blog__more"></p>
                         </div>
                     </a>
-                    <a class="blog__post" href="#">
+                    <a class="blog__post block" href="#">
                         <div class="blog__wrapper">
                             <figure class="blog__img">
                                 <img src="./assets/image-14.jpeg" alt="">
@@ -266,9 +269,9 @@
                     <div class="footer__contact">
                         <h4>Contact</h4>
                             <ul>
-                                <li><i class="far fa-envelope"></i> <a href="mailto:info@hackeryou.com">info@hackeryou.com</a></li>
-                                <li><i class="fas fa-phone"></i> <a href="#">123-456-7890</a></li>
-                                <li><i class="fas fa-map-marker-alt"></i> <a href="#">Toronto, Ontario</a></li>
+                                <li><a href="mailto:info@hackeryou.com"><i class="far fa-envelope"></i> info@hackeryou.com</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i> 123-456-7890</a></li>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Toronto, Ontario</a></li>
                             </ul>
                             <form class="subscription" action=""><input class="subscription__input" type="text" placeholder="your email"><button class="subscription__submit"><i class="fas fa-paper-plane"></i></button></form>
                     </div>
@@ -340,9 +343,9 @@
             <!-- footer, social media -->
 
             <ul class="footer__socialmedia">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a class="icon" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="icon" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="icon" href="#"><i class="fab fa-pinterest-p"></i></a></li>
             </ul>
 
         </footer>

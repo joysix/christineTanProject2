@@ -9,21 +9,17 @@ footer {
         h4 {
             margin-bottom: 20px;
         }
-        display: flex;
+        @include flex(row);
         & > div {
             margin: 20px;
         }
-        & > .footer__contact {
-            flex: 1 0 calc(30% - 40px); 
-        }
-        & > .footer__about,
-        & > .footer__instagram {
-            flex: 1 0 calc(70% / 2 - 40px);
-        }
     }
+
     
     &__contact {
+        flex: 1 0 calc(30% - 40px); 
         .subscription {
+            max-width: 225px; 
             @include flex(row);
             margin-top: 20px;
             border: 1px $white solid;
@@ -41,9 +37,14 @@ footer {
             }
         }
     }
+    
+    &__about {
+        flex: 1 0 calc(70% / 2 - 40px);
+    }
 
     &__instagram {
         @include flex(row);
+        flex: 1 0 calc(70% / 2 - 40px);
         .instagram__gallery {
             @include flex(row);
             .gallery__item {
@@ -88,4 +89,58 @@ footer {
         text-align: center;
     }
 
+}
+
+@media (max-width: 850px) {
+    .footer {
+        &__wrapper {
+            & > .footer__contact, & > .footer__about {
+                flex: 1 0 calc(100%/2 - 40px);
+            }
+            & > .footer__instagram {
+                flex: 1 0 100%;
+            }
+        }
+        
+        &__instagram {
+    
+        .instagram__gallery {
+            @include flex(row);
+            .gallery__item {
+                flex: 1 0 12.5%;
+                padding: 5px;
+            }
+        }
+    }
+
+        &__navbar {
+            display: none;
+        }
+        
+    }
+}
+
+@media (max-width: 635px) {
+    .footer {
+        &__wrapper {
+            width: 60%;
+            @include flex(row);
+            & > .footer__contact,
+            & > .footer__instagram {
+            flex: 1 0 100%;
+            }
+            & > .footer__about {
+                display: none;
+            }
+        }
+        &__instagram {
+            .instagram__gallery {
+                .gallery__item {
+                    flex: 1 0 25%;
+                }
+            }
+        }
+        
+    }
+    
 }

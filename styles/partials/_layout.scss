@@ -42,3 +42,11 @@ img {
 img {
     width: 100%;
 }
+
+@media (max-width: 850px) {
+    .container {
+        margin: auto;
+        padding: 50px 0;
+        width: 90%;
+    }
+}

@@ -58,6 +58,9 @@ a {
     &--inline {
         display: inline;
     }
+    &:hover {
+        border: 0;
+    }
 }
 
 form, input, button {

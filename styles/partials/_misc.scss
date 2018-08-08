@@ -42,6 +42,7 @@ a {
     font-family: $sanserif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: unset;
     transition: background-color 0.3s;
     &--red {
         background-color: $red;

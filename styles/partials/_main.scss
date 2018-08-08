@@ -78,7 +78,7 @@
 //////////// WELCOME ////
 
 .welcome {
-    @include flex(column);    
+    @include flex(column);
     h3 {
         flex-basis: 100%;
     }
@@ -92,6 +92,7 @@
         }
         .btn {
             margin: auto;
+            line-height: 1.8rem;
         }
     }
 }
@@ -177,6 +178,7 @@
         figure i {
             margin: 30px;
             font-size: 3.0rem;
+            border: 0;
         }
         
         figure, p {
@@ -186,11 +188,19 @@
         p {
             padding: 0 20%;
         }
-        
-
         p:last-child::before,
         p:last-child::after {
             content: " ~ ";
+        }
+        a.reviews__arrow:hover {
+            border: 0;
+            position: relative;
+        }
+        a.reviews__arrow--right:hover {
+            left: 2px;
+        }
+        a.reviews__arrow--left:hover {
+            right: 2px;
         }
     }
 }
@@ -353,6 +363,13 @@
         .stats__record {
             @include heading(2.0rem)
         }
+    }
+}
+
+@media (max-width: 635px) {
+    .stats__item {
+        flex: 1 0 50%;
+        padding: 25px;
     }
 }
 

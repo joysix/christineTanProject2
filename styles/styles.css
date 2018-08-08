@@ -138,11 +138,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-padding-start: 0px;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 0px;
+  -moz-padding-start: 0px; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 .wrapper, .container {
   margin: 0 auto; }
@@ -273,6 +279,7 @@ a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+  line-height: unset;
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s; }
@@ -565,7 +572,8 @@ nav {
     .welcome > .container * {
       margin: 30px 0; }
     .welcome > .container .btn {
-      margin: auto; }
+      margin: auto;
+      line-height: 1.8rem; }
 
 .services {
   padding: 80px 0; }
@@ -651,7 +659,8 @@ nav {
     width: 95px; }
   .reviews > .container figure i {
     margin: 30px;
-    font-size: 3.0rem; }
+    font-size: 3.0rem;
+    border: 0; }
   .reviews > .container figure, .reviews > .container p {
     margin: 15px auto; }
   .reviews > .container p {
@@ -659,6 +668,13 @@ nav {
   .reviews > .container p:last-child::before,
   .reviews > .container p:last-child::after {
     content: " ~ "; }
+  .reviews > .container a.reviews__arrow:hover {
+    border: 0;
+    position: relative; }
+  .reviews > .container a.reviews__arrow--right:hover {
+    left: 2px; }
+  .reviews > .container a.reviews__arrow--left:hover {
+    right: 2px; }
 
 @media (max-width: 850px) {
   .reviews > .container p {
@@ -842,6 +858,13 @@ nav {
       letter-spacing: 1px;
       text-transform: uppercase; }
 
+@media (max-width: 635px) {
+  .stats__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    padding: 25px; } }
+
 .blog {
   padding: 80px 0; }
   .blog > .container {
@@ -925,7 +948,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 20px 20px 20px;
+  padding: 60px 20px 20px 20px;
   font-size: 1.3rem;
   line-height: 2.6rem; }
 
@@ -967,8 +990,8 @@ footer {
       background-color: transparent; }
     .footer__contact .subscription__input {
       -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(100% - 25px);
-      flex: 1 0 calc(100% - 25px);
+      -ms-flex: 1 0 calc(100% - 30px);
+      flex: 1 0 calc(100% - 30px);
       padding: 5px; }
     .footer__contact .subscription__submit {
       -webkit-box-flex: 0;
@@ -1088,7 +1111,7 @@ footer {
 
 @media (max-width: 635px) {
   .footer__wrapper {
-    width: 60%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

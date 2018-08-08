@@ -164,7 +164,8 @@ body {
   margin: auto; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 figure,
 img {
